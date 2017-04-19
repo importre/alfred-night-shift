@@ -1,6 +1,6 @@
 {
   "name": "alfred-night-shift",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Alfred 3 workflow to toggle night shift",
   "license": "MIT",
   "repository": "importre/alfred-night-shift",
