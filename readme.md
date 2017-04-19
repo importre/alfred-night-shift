@@ -23,7 +23,7 @@ In Alfred, type `night`, <kbd>Enter</kbd>
 
 ### Troubleshooting
 
-You must allow Alfred 3 to control your computer.
+You must allow Alfred 3 to control your mac.
 
 ![](https://cloud.githubusercontent.com/assets/1744446/21987303/583a4a7c-dc46-11e6-8523-dbd76fa4b71c.png)
 
