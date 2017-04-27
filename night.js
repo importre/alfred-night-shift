@@ -4,7 +4,7 @@ function showError(message) {
 	app.displayAlert(message);
 }
 
-function run(argv) {
+function main() {
 	const prefName = 'System Preferences';
 	const anchor = new Application(prefName)
 		.panes.byId('com.apple.preference.displays')
@@ -24,5 +24,13 @@ function run(argv) {
 		.map(w => w.tabGroups[0])
 		.filter(t => t.checkboxes.length > 0)
 		.forEach(t => t.checkboxes[0].click());
+}
+
+function run(argv) {
+	try {
+		main();
+	} catch (err) {
+		showError(err.toString());
+	}
 }
 
