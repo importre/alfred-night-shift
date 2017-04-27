@@ -1,9 +1,7 @@
-function showError(err, title) {
+function showError(message) {
 	const app = Application.currentApplication();
 	app.includeStandardAdditions = true;
-	app.displayAlert(err.toString(), {
-		withTitle: title
-	});
+	app.displayAlert(message);
 }
 
 function run(argv) {
@@ -16,7 +14,7 @@ function run(argv) {
 		anchor.reveal();
 		delay(0.5);
 	} catch (err) {
-		showError(err, 'Please update your macOS');
+		showError('Please update your macOS');
 		return;
 	}
 
